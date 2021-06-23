@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "prettier"
+  ],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "prettier/prettier": ["error"]
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [["~", "./"]],
+        "extensions": [".ts", ".js", ".jsx", ".tsx", ".json"]
+      }
+    }
+  }
+}
