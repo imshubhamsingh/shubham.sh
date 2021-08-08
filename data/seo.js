@@ -9,7 +9,7 @@ const siteMetaDeta = {
       'Shubham is a UI Engineer who specializes in building digital experience for web. Currently exploring the world of generative art, interactive animations, and 3D graphics on web',
     images: [
       {
-        url: 'https://www.example.ie/og-image-01.jpg',
+        url: 'https://shubham.sh/og.png',
         width: 800,
         height: 600,
         alt: '/',
@@ -20,7 +20,7 @@ const siteMetaDeta = {
   twitter: {
     handle: 'imshubhamsingh_',
     site: 'https://shubham.sh',
-    image: 'https://www.example.ie/og-image-01.jpg',
+    url: 'https://shubham.sh/og.png',
     cardType: 'summary_large_image',
   },
 };

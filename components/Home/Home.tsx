@@ -24,7 +24,7 @@ function Home() {
         color: '#805de13b',
       });
       annotation.show();
-    }, 200);
+    }, 700);
   }, []);
   return (
     <div className={styles.container}>
