@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Silka Regular";
+  background-color: var(--color-white);
+  background-image: radial-gradient(#fafafa 10%, transparent 10%);
+  background-size: 50px 50px;
+}
+
+
+p {
+  font-size: var(--font-size-md);
+}
+
+p,
+article,
+section {
+  line-height: 1.5;
+}
+
+*:focus {
+  outline: 0.15rem dashed var(--color-purple);
+  outline-offset: 0.25rem;
+}
+
+
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}

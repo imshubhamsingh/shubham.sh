@@ -1,0 +1,12 @@
+.container {
+  position: relative;
+}
+
+.container svg {
+  position: absolute;
+  top: -7px;
+}
+
+.container svg path {
+    stroke-width: 10
+}

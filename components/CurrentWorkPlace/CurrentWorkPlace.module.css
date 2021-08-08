@@ -1,0 +1,22 @@
+.blink {
+  position: relative;
+  height: 8px;
+  border-radius: 50%;
+  width: 8px;
+  background-color: var(--color-green);
+  top: -1px;
+  margin-right: 8px;
+  animation: pulse 1s infinite cubic-bezier(0.22, 0.61, 0.36, 1),
+    fade 5.4s 1 ease-out forwards;
+  display: inline-block;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 1px rgba(25, 175, 85, 0.5),
+      0 0 0 1px rgba(25, 175, 85, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 5px rgba(325, 175, 85, 0), 0 0 0 10px rgba(25, 175, 85, 0);
+  }
+}

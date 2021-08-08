@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('icons/icomoon.eot');
+  src: url('icons/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('icons/icomoon.woff') format('woff'),
+    url('icons/icomoon.svg#icomoon') format('svg');
+  font-style: normal;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  /* stylelint-disable-next-line */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin::before {
+  content: '\e900';
+}
+
+.icon-linkedin:hover::before {
+  color: #2867B2;
+}
+
+.icon-codepen::before {
+  content: '\e901';
+}
+
+.icon-codepen:hover::before {
+  color: #000;
+}
+
+.icon-github::before {
+  content: '\e902';
+}
+
+.icon-github:hover::before {
+  color: #000;
+}
+
+.icon-twitter::before {
+  content: '\e903';
+}
+
+.icon-twitter:hover::before {
+  color: #1DA1F2;
+}
+
+.icon-spotify::before {
+  content: '\e904';
+}
+
+.icon-spotify:hover::before {
+  color: #1DB954;
+}
+
+
+.icon-smallcase::before {
+  content: '\e905';
+}

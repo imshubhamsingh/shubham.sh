@@ -1,0 +1,20 @@
+.flex {
+    display: flex;
+}
+
+.flex-start { 
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-apart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.flex-start-top { 
+  justify-content: flex-start;
+  align-items: flex-start;
+}

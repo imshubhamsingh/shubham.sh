@@ -1,0 +1,80 @@
+.avatar {
+  background: red;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 98px 1fr 48px;
+  min-height: 100vh;
+}
+
+.home {
+  width: 247px;
+}
+
+.nav {
+  padding: 24px;
+}
+
+.footer {
+  margin: 0 16px 16px 16px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0px;
+  font-size: 24px;
+}
+
+.footer ul > * {
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.main {
+  margin: 10px auto 40px;
+  padding: 0 16px;
+}
+
+.btnMail {
+  border: 1px solid hsla(0, 0%, 88.6%, 0.84);
+  border-radius: 100px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 #e2e2e2;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 1184px) {
+  .main {
+    width: 956px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .footer {
+    margin-right: 32px;
+    margin-bottom: 32px;
+    margin-left: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mwebWork {
+    display: block;
+  }
+
+  .webWork {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mwebWork {
+    display: none;
+  }
+
+  .webWork {
+    display: block;
+  }
+}
