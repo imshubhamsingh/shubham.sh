@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Link from 'next/link';
 import classNames from 'classnames';
 import Image from 'next/image';
 import { annotate } from 'rough-notation';
@@ -28,16 +29,18 @@ function Home() {
   return (
     <div className={styles.container}>
       <nav className={classNames('flex-apart', styles.nav)}>
-        <div className="flex flex-start">
-          <Avatar />
-          <p className="ml12 text-16">
-            <span className="text-dark">
-              <Signature />
-            </span>
-            <br />
-            <span className="text-light">UI Enthusiast</span>
-          </p>
-        </div>
+        <Link href="/" passHref>
+          <a className={classNames('flex', 'flex-start', styles.home)}>
+            <Avatar />
+            <p className="ml12 text-16">
+              <span className="text-dark">
+                <Signature />
+              </span>
+              <br />
+              <span className="text-light">UI Enthusiast</span>
+            </p>
+          </a>
+        </Link>
         <div className={styles.webWork}>
           <CurrentWorkPlace />
         </div>

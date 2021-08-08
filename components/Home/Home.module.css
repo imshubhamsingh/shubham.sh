@@ -8,6 +8,10 @@
   min-height: 100vh;
 }
 
+.home {
+  width: 247px;
+}
+
 .nav {
   padding: 24px;
 }

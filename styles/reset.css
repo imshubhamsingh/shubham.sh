@@ -24,13 +24,12 @@ section {
   line-height: 1.5;
 }
 
-:focus {
-  outline: 0.15rem dashed var(--off-white);
+*:focus {
+  outline: 0.15rem dashed var(--color-purple);
   outline-offset: 0.25rem;
 }
-main:focus {
-  outline: none;
-}
+
+
 
 img {
   max-width: 100%;
