@@ -2,16 +2,24 @@ import * as React from 'react';
 import classNames from 'classnames';
 import Image from 'next/image';
 import { annotate } from 'rough-notation';
+import socialMediaLinks from '~/data/socialMedia';
 
 import profilePic from '~/public/shubham_avatar.png';
 
 import styles from './Home.module.css';
+import CurrentWorkPlace from '../CurrentWorkPlace/CurrentWorkPlace';
+import Project from '../Projects/Project';
+import HandWave from '../HandWave/HandWave';
 
 function Home() {
-  const ref = React.useRef(null);
+  const ref = React.useRef<HTMLSpanElement>(null);
   React.useEffect(() => {
     setTimeout(() => {
-      const annotation = annotate(ref.current, { type: 'underline' });
+      const annotation = annotate(ref.current as HTMLSpanElement, {
+        type: 'highlight',
+        multiline: true,
+        color: '#805de13b',
+      });
       annotation.show();
     }, 200);
   }, []);
@@ -32,31 +40,32 @@ function Home() {
             <span className="text-light">UI Enthusiast</span>
           </p>
         </div>
-        <div>
-          <p className={classNames('text-light', 'relative', styles.working)}>
-            Currently working at{' '}
-            <a
-              className="text-dark font-medium link"
-              target="_blank"
-              href="http://smallcase.com/"
-              rel="noreferrer"
-            >
-              smallcase
-            </a>
-          </p>
+        <div className={styles.webWork}>
+          <CurrentWorkPlace />
         </div>
       </nav>
       <main className={styles.main}>
-        <section className="text-40">👋</section>
+        <section className="text-40">
+          <HandWave />
+        </section>
         <section className="mb24">
           <p className="text-20 mb12">
             Hi! Looks like you’ve made it to my corner of the internet.
           </p>
-          <p className="text-40">
-            I am a front-end engineer with a <span ref={ref}>strong focus</span>
-            on interfaces and experiences working remotely from India.
+          <p className="text-40 mb12">
+            I am a design-minded software developer with a{' '}
+            <span ref={ref}>strong focus on interfaces and experiences</span>{' '}
+            working remotely from India.
           </p>
+          <p className="text-20">
+            I like to work on open-source projects, and have created a number of
+            projects.
+          </p>
+          <Project />
         </section>
+        <div className={classNames(styles.mwebWork, 'mb16')}>
+          <CurrentWorkPlace />
+        </div>
         <section className="text-40 inline-block text-center">
           <a
             className={classNames(
@@ -68,7 +77,7 @@ function Home() {
             )}
             href="mailto:hello@shubham.sh"
           >
-            Say <span className="text-purple">hello@shubham.sh</span>
+            say <span className="text-purple">hello@shubham.sh</span>
           </a>
           <p className="text-light text-16">Feel free to reach out to me! 👨‍💻</p>
         </section>
@@ -76,11 +85,17 @@ function Home() {
       <footer className={classNames(styles.footer, 'text-light')}>
         <p className="text-light mr12">/Elsewhere</p>
         <ul>
-          <i className="icon-codepen" />
-          <i className="icon-twitter" />
-          <i className="icon-linkedin" />
-          <i className="icon-github" />
-          <i className="icon-spotify" />
+          {socialMediaLinks.map((el) => (
+            <a
+              key={el.name}
+              className="text-light"
+              href={`${el.link}/?ref=shubham.sh`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className={el.icon} />
+            </a>
+          ))}
         </ul>
       </footer>
     </div>

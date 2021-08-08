@@ -9,6 +9,8 @@
 body {
   font-family: "Silka Regular";
   background-color: var(--color-white);
+  background-image: radial-gradient(#fafafa 10%, transparent 10%);
+  background-size: 50px 50px;
 }
 
 
