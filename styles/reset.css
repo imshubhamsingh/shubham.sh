@@ -11,6 +11,17 @@ body {
   background-color: var(--color-white);
   background-image: radial-gradient(#fafafa 10%, transparent 10%);
   background-size: 50px 50px;
+  animation: shimmer 100s linear infinite forwards;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  
+  100% {
+    background-position: 400px 0; 
+  }
 }
 
 
