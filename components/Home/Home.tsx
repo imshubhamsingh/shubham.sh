@@ -54,11 +54,11 @@ function Home() {
             Hi! I&apos;m Shubham. Looks like you’ve made it to my corner of the
             internet.
           </p>
-          <p className="text-40 mb12">
+          <h1 className="text-40 font-normal mb12">
             I am a design-minded software developer with a{' '}
             <span ref={ref}>strong focus on interfaces and experiences</span>{' '}
             working remotely from India.
-          </p>
+          </h1>
           <p className="text-20">
             I like to work on open-source projects, and have created a number of
             projects.

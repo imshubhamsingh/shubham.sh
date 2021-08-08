@@ -1,5 +1,6 @@
 const siteMetaDeta = {
   title: 'Shubham Singh | UI Engineer',
+  canonical: 'https://shubham.sh',
   description:
     'Shubham is a UI Engineer who specializes in building digital experience for web. Currently exploring the world of generative art, interactive animations, and 3D graphics on web',
   openGraph: {

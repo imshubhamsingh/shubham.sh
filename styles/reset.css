@@ -25,13 +25,13 @@ body {
 }
 
 
-p {
+p, h1 {
   font-size: var(--font-size-md);
 }
 
 p,
 article,
-section {
+section, h1 {
   line-height: 1.5;
 }
 
