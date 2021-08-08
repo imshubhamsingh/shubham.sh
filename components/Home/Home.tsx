@@ -11,6 +11,7 @@ import CurrentWorkPlace from '../CurrentWorkPlace/CurrentWorkPlace';
 import Project from '../Projects/Project';
 import HandWave from '../HandWave/HandWave';
 import Avatar from '../Avatar/Avatar';
+import Signature from '../Signature/Signature';
 
 function Home() {
   const ref = React.useRef<HTMLSpanElement>(null);
@@ -30,7 +31,9 @@ function Home() {
         <div className="flex flex-start">
           <Avatar />
           <p className="ml12 text-16">
-            <span className="text-dark">Shubham Singh</span>
+            <span className="text-dark">
+              <Signature />
+            </span>
             <br />
             <span className="text-light">UI Enthusiast</span>
           </p>
@@ -45,7 +48,8 @@ function Home() {
         </section>
         <section className="mb24">
           <p className="text-20 mb12">
-            Hi! Looks like you’ve made it to my corner of the internet.
+            Hi! I&apos;m Shubham. Looks like you’ve made it to my corner of the
+            internet.
           </p>
           <p className="text-40 mb12">
             I am a design-minded software developer with a{' '}
