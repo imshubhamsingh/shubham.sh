@@ -1,0 +1,56 @@
+.container {
+  height: 50px;
+  width: 50px;
+  background: var(--color-purple);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar {
+  position: relative;
+  left: -10px;
+  animation: me 5s 1 forwards;
+  transition: tranform 700ms ease-in;
+}
+
+@keyframes me {
+  0% {
+    transform: translate(-100px, 0);
+  }
+
+  20% {
+    transform: translate(100px, 0);
+  }
+
+  21% {
+    transform: translate(100px, 0) scaleX(-1);
+  }
+
+  40% {
+    transform: translate(-100px, 0) scaleX(-1);
+  }
+
+  41% {
+    transform: translate(-100px, 0);
+  }
+
+  42% {
+    transform: translate(-15px, 100px);
+  }
+
+  60% {
+    transform: translate(-15px, 0);
+  }
+
+  70% {
+    transform: translate(-15px, 100px);
+  }
+
+  71% {
+    transform: translate(-100px, 0);
+  }
+
+  100% {
+    transform: translate(-15px, -10px) scale(0.85);
+  }
+}

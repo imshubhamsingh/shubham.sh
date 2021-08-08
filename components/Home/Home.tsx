@@ -10,6 +10,7 @@ import styles from './Home.module.css';
 import CurrentWorkPlace from '../CurrentWorkPlace/CurrentWorkPlace';
 import Project from '../Projects/Project';
 import HandWave from '../HandWave/HandWave';
+import Avatar from '../Avatar/Avatar';
 
 function Home() {
   const ref = React.useRef<HTMLSpanElement>(null);
@@ -27,13 +28,7 @@ function Home() {
     <div className={styles.container}>
       <nav className={classNames('flex-apart', styles.nav)}>
         <div className="flex flex-start">
-          <Image
-            src={profilePic}
-            alt="Shubham Singh"
-            height={50}
-            width={50}
-            className="avatar"
-          />
+          <Avatar />
           <p className="ml12 text-16">
             <span className="text-dark">Shubham Singh</span>
             <br />
@@ -83,7 +78,7 @@ function Home() {
         </section>
       </main>
       <footer className={classNames(styles.footer, 'text-light')}>
-        <p className="text-light mr12">/Elsewhere</p>
+        <p className="text-light mr12">/elsewhere</p>
         <ul>
           {socialMediaLinks.map((el) => (
             <a
