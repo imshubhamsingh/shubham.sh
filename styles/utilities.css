@@ -1,0 +1,23 @@
+.grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30ch, 1fr));
+  gap: var(--space-md);
+}
+
+.lockup {
+  max-width: 90ch;
+  margin: 0 auto;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.inline-block {
+  display: inline-block;
+}

@@ -1,0 +1,18 @@
+.btn {
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  user-select: none;
+  border-radius: 4px;
+  border: solid 1px transparent;
+  cursor: pointer;
+  padding: 9px 13px;
+  box-sizing: border-box;
+  outline: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:active {
+  box-shadow: none !important;
+  transform: none !important;
+}

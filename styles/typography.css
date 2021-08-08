@@ -1,0 +1,57 @@
+.text-light {
+  color: var(--text-color-light);
+}
+
+.text-dark {
+  color: var(--text-color-dark);
+}
+
+.text-normal {
+  color: var(--text-color-normal);
+}
+
+.text-blue {
+  color: var(--color-blue);
+}
+
+.text-purple {
+  color: var(--color-purple);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-40 {
+  font-size: 40px;
+}
+
+.text-16 {
+  font-size: 16px;
+}
+
+.text-32 {
+  font-size: 32px;
+}
+
+.text-12 {
+  font-size: 12px;
+}
+
+.text-28 {
+  font-size: 28px;
+}
+
+.link {
+  color: var(--color-blue);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: $link-hover;
+}
