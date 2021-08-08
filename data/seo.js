@@ -20,7 +20,7 @@ const siteMetaDeta = {
   twitter: {
     handle: 'imshubhamsingh_',
     site: 'https://shubham.sh',
-    url: 'https://shubham.sh/og.png',
+    image: 'https://shubham.sh/og.png',
     cardType: 'summary_large_image',
   },
 };
