@@ -7,7 +7,7 @@ import styles from './NowPlaying.module.css';
 const { name, icon, link } = socialMediaLinks[4];
 
 export default function NowPlaying() {
-  let { data } = useSWR('/api/now-playing');
+  const { data } = useSWR('/api/now-playing');
   if (!data) return null;
   return (
     <div className={classNames('flex flex-start', styles.playing)}>

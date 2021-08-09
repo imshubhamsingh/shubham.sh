@@ -1,3 +1,8 @@
+.playing {
+  min-height: 17px;
+  min-width: 17px;
+}
+
 .crest {
   width: 3px;
   height: 3px;
