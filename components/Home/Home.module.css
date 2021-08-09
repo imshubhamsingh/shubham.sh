@@ -16,19 +16,6 @@
   padding: 24px;
 }
 
-.footer {
-  margin: 0 16px 16px 16px;
-  display: flex;
-  align-items: center;
-  padding-bottom: 0px;
-  font-size: 24px;
-}
-
-.footer ul > * {
-  margin-right: 12px;
-  cursor: pointer;
-}
-
 .main {
   margin: 10px auto 40px;
   padding: 0 16px;
@@ -82,6 +69,10 @@
 
   .webWork {
     display: none;
+  }
+
+  .container {
+    grid-template-rows: 98px 1fr 98px;
   }
 }
 

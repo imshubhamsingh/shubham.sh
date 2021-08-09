@@ -1,11 +1,7 @@
 import * as React from 'react';
 import Link from 'next/link';
 import classNames from 'classnames';
-import Image from 'next/image';
 import { annotate } from 'rough-notation';
-import socialMediaLinks from '~/data/socialMedia';
-
-import profilePic from '~/public/shubham_avatar.png';
 
 import styles from './Home.module.css';
 import CurrentWorkPlace from '../CurrentWorkPlace/CurrentWorkPlace';
@@ -13,6 +9,7 @@ import Project from '../Projects/Project';
 import HandWave from '../HandWave/HandWave';
 import Avatar from '../Avatar/Avatar';
 import Signature from '../Signature/Signature';
+import Footer from '../Footer/Footer';
 
 function Home() {
   const ref = React.useRef<HTMLSpanElement>(null);
@@ -86,22 +83,7 @@ function Home() {
           <p className="text-light text-16">Feel free to reach out to me! 👨‍💻</p>
         </section>
       </main>
-      <footer className={classNames(styles.footer, 'text-light')}>
-        <p className="text-light mr12">/elsewhere</p>
-        <ul>
-          {socialMediaLinks.map((el) => (
-            <a
-              key={el.name}
-              className="text-light"
-              href={`${el.link}/?ref=shubham.sh`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className={el.icon} />
-            </a>
-          ))}
-        </ul>
-      </footer>
+      <Footer />
     </div>
   );
 }
