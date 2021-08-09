@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/imshubhamsingh/shubham.sh/compare/v1.0.0...v1.1.0) (2021-08-09)
+
+
+### Features
+
+* 🎸 added support for currently playing music on spotify ([c0211b1](https://github.com/imshubhamsingh/shubham.sh/commit/c0211b1b430b04dcb634c9494bb4f2d11d9fac53))
+
 ## 1.0.0 (2021-08-09)
 
 
