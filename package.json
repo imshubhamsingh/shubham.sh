@@ -1,17 +1,19 @@
 {
   "name": "shubham.sh",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "release": "HUSKY_SKIP_HOOKS=1 standard-version"
   },
   "dependencies": {
     "autoprefixer": "^10.2.6",
     "classnames": "^2.3.1",
     "next": "11.0.0",
+    "next-seo": "^4.26.0",
     "preact": "^10.5.13",
     "querystring": "^0.2.1",
     "react": "17.0.2",
@@ -19,6 +21,8 @@
     "rough-notation": "^0.5.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "@types/react": "17.0.11",
     "content-security-policy-builder": "^2.1.0",
     "eslint": "7.29.0",
@@ -26,7 +30,10 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^11.1.2",
     "prettier": "^2.3.1",
+    "standard-version": "^9.3.1",
     "typescript": "4.3.4"
   }
 }

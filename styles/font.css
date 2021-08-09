@@ -25,6 +25,10 @@
 
 }
 
+.font-normal {
+    font-weight: 100;
+}
+
 .font-medium {
     font-weight: bold;
 }
