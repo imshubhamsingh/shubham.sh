@@ -78,6 +78,8 @@ function Home() {
               styles.btnMail,
             )}
             href="mailto:hello@shubham.sh"
+            target="_blank"
+            rel="noreferrer"
           >
             say <span className="text-purple">hello@shubham.sh</span>
           </a>
