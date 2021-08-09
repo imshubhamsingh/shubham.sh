@@ -1,0 +1,50 @@
+.playing {
+  min-height: 17px;
+  min-width: 17px;
+}
+
+.crest {
+  width: 3px;
+  height: 3px;
+  margin-right: 3px;
+  background: var(--text-color-light);
+  border-radius: 1.5px;
+}
+
+.playing:hover .crest {
+  background: var(--color-green);
+}
+
+.logo {
+  top: -2px;
+}
+
+.crest:nth-child(1) {
+  animation: playing 700ms infinite ease;
+}
+
+.crest:nth-child(2) {
+  animation: playing 1400ms infinite ease;
+}
+
+.crest:nth-child(3) {
+  animation: playing 350ms infinite ease;
+}
+
+@keyframes playing {
+  0% {
+    height: 3px;
+  }
+  50% {
+    height: 12px;
+  }
+  to {
+    height: 3px;
+  }
+}
+
+@media (max-width: 768px) {
+  .playing {
+    margin-bottom: 16px;
+  }
+}

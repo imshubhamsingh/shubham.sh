@@ -14,6 +14,10 @@
   color: var(--color-blue);
 }
 
+.text-green {
+  color: var(--color-green);
+}
+
 .text-purple {
   color: var(--color-purple);
 }
