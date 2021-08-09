@@ -4,7 +4,7 @@ import socialMediaLinks from '~/data/socialMedia';
 
 import styles from './NowPlaying.module.css';
 
-const { name, icon, link } = socialMediaLinks[4];
+const { icon, link } = socialMediaLinks[4];
 
 export default function NowPlaying() {
   const { data } = useSWR('/api/now-playing');
