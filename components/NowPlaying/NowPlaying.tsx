@@ -7,7 +7,10 @@ import styles from './NowPlaying.module.css';
 const { icon, link } = socialMediaLinks[4];
 
 export default function NowPlaying() {
-  const { data } = useSWR('/api/now-playing');
+  const { data } = useSWR('/api/now-playing', {
+    refreshInterval: 210000, // polling after 3 min 10 sec - avg song length,
+    refreshWhenHidden: true,
+  });
   if (!data) return null;
   return (
     <div className={classNames('flex flex-start', styles.playing)}>
