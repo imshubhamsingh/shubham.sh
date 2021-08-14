@@ -31,7 +31,7 @@
 }
 
 .icon-linkedin:hover::before {
-  color: #2867B2;
+  color: #2867b2;
 }
 
 .icon-codepen::before {
@@ -39,7 +39,7 @@
 }
 
 .icon-codepen:hover::before {
-  color: #000;
+  color: var(--text-color-normal);
 }
 
 .icon-github::before {
@@ -47,7 +47,7 @@
 }
 
 .icon-github:hover::before {
-  color: #000;
+  color: var(--text-color-normal);
 }
 
 .icon-twitter::before {
@@ -55,7 +55,7 @@
 }
 
 .icon-twitter:hover::before {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 .icon-spotify::before {
@@ -63,9 +63,8 @@
 }
 
 .icon-spotify:hover::before {
-  color: #1DB954;
+  color: #1db954;
 }
-
 
 .icon-smallcase::before {
   content: '\e905';

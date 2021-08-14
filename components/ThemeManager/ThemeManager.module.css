@@ -1,0 +1,17 @@
+.toggle {
+  border-radius: 50%;
+  outline: none;
+  font-size: 25px;
+  padding: 4px 8px;
+}
+
+.toggle:focus:after {
+  content: '';
+  position: absolute;
+  height: calc(100% + 16px);
+  width: calc(100% + 16px);
+  border-radius: 100px;
+  border: 2px dashed var(--color-purple);
+  top: -8px;
+  left: -8px;
+}

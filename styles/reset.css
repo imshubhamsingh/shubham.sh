@@ -8,7 +8,7 @@
 
 body {
   font-family: "Silka Regular";
-  background-color: var(--color-white);
+  background-color: var(--bg);
   background-image: radial-gradient(var(--bg-dots) 10%, transparent 10%);
   background-size: 50px 50px;
   animation: shimmer 100s linear infinite forwards;

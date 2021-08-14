@@ -3,6 +3,10 @@
 
 :root {
   color-scheme: light dark;
+  --color-blue: #1f7ae0;
+  --color-green: #19af55;
+  --color-purple: #805de1;
+  --color-border: #dde0e4;
 }
 
 @media (prefers-color-scheme: no-preference) {

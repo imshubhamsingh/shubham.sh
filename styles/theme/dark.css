@@ -1,12 +1,9 @@
 [data-theme='dark'] {
-  --color-blue: #1f7ae0;
-  --color-green: #19af55;
-  --color-purple: #805de1;
-  --color-border: #dde0e4;
-  --color-white: #0c0c0c;
+  --bg: #0c0c0c;
   --color-link-hover: #248aff;
   --text-color-dark: #fff;
   --text-color-light: #9ca3af;
   --text-color-normal: #fff;
   --bg-dots: #101010;
+  --theme-toggler: #805de1;
 }
