@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/imshubhamsingh/shubham.sh/compare/v1.2.0...v1.2.1) (2021-08-14)
+
+
+### Bug Fixes
+
+* accessibility issues ([5ccd69f](https://github.com/imshubhamsingh/shubham.sh/commit/5ccd69f9e1cf9eb8fe36a6e46ba2767a99b129b2))
+* tap targets are not sized appropriately ([53a911b](https://github.com/imshubhamsingh/shubham.sh/commit/53a911b42f4cdfc3246089f3cd65b94495e69307))
+
 ## [1.2.0](https://github.com/imshubhamsingh/shubham.sh/compare/v1.1.0...v1.2.0) (2021-08-14)
 
 
