@@ -1,0 +1,11 @@
+[data-theme='dark'] {
+  --bg: #0c0c0c;
+  --color-link-hover: #248aff;
+  --text-color-dark: #fff;
+  --text-color-light: #9ca3af;
+  --text-color-normal: #fff;
+  --bg-dots: #101010;
+  --theme-toggler: #eec413;
+  --bg-btn: #3b3b3b;
+  --btn-border: hsl(0deg 0% 23%);
+}

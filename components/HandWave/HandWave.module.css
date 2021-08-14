@@ -11,6 +11,7 @@
 .handWiggles {
   animation: wiggle 5s 2 forwards;
   transform-origin: 50% 50%;
+  fill: var(--text-color-normal)
 }
 
 @keyframes wave {

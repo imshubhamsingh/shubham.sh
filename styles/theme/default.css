@@ -1,0 +1,20 @@
+@import './light.css';
+@import './dark.css';
+
+:root {
+  color-scheme: light dark;
+  --color-white: #fff;
+  --color-blue: #1f7ae0;
+  --color-green: #19af55;
+  --color-purple: #805de1;
+  --color-border: #dde0e4;
+}
+
+@media (prefers-color-scheme: no-preference) {
+}
+/* Apply a light color scheme */
+@media (prefers-color-scheme: light) {
+}
+/* Apply a dark color scheme */
+@media (prefers-color-scheme: dark) {
+}

@@ -10,6 +10,7 @@ import HandWave from '../HandWave/HandWave';
 import Avatar from '../Avatar/Avatar';
 import Signature from '../Signature/Signature';
 import Footer from '../Footer/Footer';
+import ThemeManager from '../ThemeManager/ThemeManager';
 
 function Home() {
   const ref = React.useRef<HTMLSpanElement>(null);
@@ -38,15 +39,18 @@ function Home() {
             </p>
           </a>
         </Link>
-        <div className={styles.webWork}>
-          <CurrentWorkPlace />
+        <div className="flex flex-start">
+          <div className={styles.webWork}>
+            <CurrentWorkPlace />
+          </div>
+          <ThemeManager />
         </div>
       </nav>
       <main className={styles.main}>
         <section className="text-40">
           <HandWave />
         </section>
-        <section className="mb24">
+        <section className="mb24 text-normal">
           <p className="text-20 mb12">
             Hi! I&apos;m Shubham. Looks like you’ve made it to my corner of the
             internet.

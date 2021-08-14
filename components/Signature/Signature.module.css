@@ -8,5 +8,6 @@
 }
 
 .container svg path {
-    stroke-width: 10
+    stroke-width: 10;
+    stroke: var(--text-color-normal)
 }

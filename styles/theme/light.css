@@ -1,0 +1,11 @@
+:root {
+  --bg: #ffffff;
+  --color-link-hover: #248aff;
+  --text-color-dark: #2f363f;
+  --text-color-light: #81878c;
+  --text-color-normal: #000;
+  --bg-dots: #fafafa;
+  --theme-toggler: #805de1;
+  --bg-btn: #fff;
+  --btn-border: hsla(0, 0%, 88.6%, 0.84);
+}
