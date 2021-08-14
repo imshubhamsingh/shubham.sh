@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/imshubhamsingh/shubham.sh/compare/v1.1.0...v1.2.0) (2021-08-14)
+
+
+### Features
+
+* added dark theme token and next-theme to manage dark theme ([db30a68](https://github.com/imshubhamsingh/shubham.sh/commit/db30a68b257da136630e1aaff3598c55b931dfd6))
+* added theme toggle button ([3e7008c](https://github.com/imshubhamsingh/shubham.sh/commit/3e7008c2546102ea942b020d7ab62cd2bd41a6e4))
+
+
+### Bug Fixes
+
+* updated next.js version for security fix ([f8c839f](https://github.com/imshubhamsingh/shubham.sh/commit/f8c839f448fe8a6646c15facbdc00a08065c0b24))
+
 ## [1.1.0](https://github.com/imshubhamsingh/shubham.sh/compare/v1.0.0...v1.1.0) (2021-08-09)
 
 
