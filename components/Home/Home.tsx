@@ -46,7 +46,7 @@ function Home() {
         <section className="text-40">
           <HandWave />
         </section>
-        <section className="mb24">
+        <section className="mb24 text-normal">
           <p className="text-20 mb12">
             Hi! I&apos;m Shubham. Looks like you’ve made it to my corner of the
             internet.

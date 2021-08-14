@@ -1,0 +1,15 @@
+@import './light.css';
+@import './dark.css';
+
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: no-preference) {
+}
+/* Apply a light color scheme */
+@media (prefers-color-scheme: light) {
+}
+/* Apply a dark color scheme */
+@media (prefers-color-scheme: dark) {
+}
