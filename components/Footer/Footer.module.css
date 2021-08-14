@@ -11,6 +11,7 @@
   list-style-type: none;
   margin-right: 12px;
   cursor: pointer;
+  display: inline-flex;
 }
 
 @media (max-width: 768px) {

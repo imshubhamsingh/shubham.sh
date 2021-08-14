@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Silka Regular";
+  font-family: 'Silka Regular';
   background-color: var(--bg);
   background-image: radial-gradient(var(--bg-dots) 10%, transparent 10%);
   background-size: 50px 50px;
@@ -18,20 +18,21 @@ body {
   0% {
     background-position: -400px 0;
   }
-  
+
   100% {
-    background-position: 400px 0; 
+    background-position: 400px 0;
   }
 }
 
-
-p, h1 {
+p,
+h1 {
   font-size: var(--font-size-md);
 }
 
 p,
 article,
-section, h1 {
+section,
+h1 {
   line-height: 1.5;
 }
 
@@ -40,12 +41,16 @@ section, h1 {
   outline-offset: 0.25rem;
 }
 
-
-
 img {
   max-width: 100%;
 }
 
 a {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  a {
+    font-size: 16px;
+  }
 }
