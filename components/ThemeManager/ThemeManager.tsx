@@ -21,6 +21,7 @@ function ThemeManager() {
         'flex-center',
         styles.toggle,
       )}
+      aria-label="Toggle theme"
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
     >
       {mounted && (

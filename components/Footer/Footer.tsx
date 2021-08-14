@@ -9,17 +9,19 @@ function Footer() {
     <footer className={classNames(styles.footer, 'text-light')}>
       <div className="flex flex-start">
         <p className="text-light mr12">/elsewhere</p>
-        <ul>
+        <ul className="flex">
           {socialMediaLinks.slice(0, 4).map((el) => (
-            <a
-              key={el.name}
-              className="text-light"
-              href={`${el.link}/?ref=shubham.sh`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className={el.icon} />
-            </a>
+            <li key={el.name}>
+              <a
+                className="text-light"
+                href={`${el.link}/?ref=shubham.sh`}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={el.name}
+              >
+                <i className={el.icon} />
+              </a>
+            </li>
           ))}
         </ul>
       </div>

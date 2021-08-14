@@ -20,6 +20,7 @@ export default function NowPlaying() {
           href={`${link}/?ref=shubham.sh`}
           target="_blank"
           rel="noreferrer"
+          aria-label={'Spotify'}
         >
           <i className={classNames(icon, styles.logo)} />
         </a>
@@ -30,6 +31,7 @@ export default function NowPlaying() {
           href={`${link}/?ref=shubham.sh`}
           target="_blank"
           rel="noreferrer"
+          aria-label={`I am currently listening to ${data.title} by ${data?.artist}}`}
         >
           {[1, 2, 3].map((el) => (
             <span key={el} className={styles.crest} />
