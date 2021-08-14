@@ -3,6 +3,7 @@
 
 :root {
   color-scheme: light dark;
+  --color-white: #fff;
   --color-blue: #1f7ae0;
   --color-green: #19af55;
   --color-purple: #805de1;

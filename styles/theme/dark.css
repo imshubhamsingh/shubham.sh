@@ -5,5 +5,7 @@
   --text-color-light: #9ca3af;
   --text-color-normal: #fff;
   --bg-dots: #101010;
-  --theme-toggler: #805de1;
+  --theme-toggler: #eec413;
+  --bg-btn: #3b3b3b;
+  --btn-border: hsl(0deg 0% 23%);
 }
