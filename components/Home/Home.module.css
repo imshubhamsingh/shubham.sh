@@ -25,7 +25,7 @@
   border: 1px solid hsla(0, 0%, 88.6%, 0.84);
   border-radius: 100px;
   background-color: #fff;
-  box-shadow: 0 1px 4px 0 #e2e2e2;
+  box-shadow: 0 1px 4px 0 var(--btn-bsdow);
   padding-left: 24px;
   padding-right: 24px;
   position: relative;
