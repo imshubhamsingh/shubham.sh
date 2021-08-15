@@ -6,7 +6,7 @@ This is my first ever portfolio made using Next.js. With time, I'll add more fea
 
 ## Overview
 
-- `pages/api/*` - [API routes](https://nextjs.org/docs/api-routes/introduction) powering my current listning song on Spotify
+- `pages/api/*` - [API routes](https://nextjs.org/docs/api-routes/introduction) powering my current listening song on Spotify
 - `pages/*` - All other static pages.
 
 ## Running Locally
