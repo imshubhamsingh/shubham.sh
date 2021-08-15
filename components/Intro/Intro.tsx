@@ -14,21 +14,23 @@ function Intro() {
   const { resolvedTheme } = useTheme();
   const mounted = useIsMounted();
 
+  const annotationRef = React.useRef<RoughAnnotation>(null);
+
   React.useEffect(() => {
-    let annotation: RoughAnnotation;
     if (!resolvedTheme) return;
-    if (mounted) {
+    if (!mounted) {
       setTimeout(() => {
-        annotation = annotate(ref.current as HTMLSpanElement, {
+        //@ts-ignore
+        annotationRef.current = annotate(ref.current as HTMLSpanElement, {
           type: 'highlight',
           multiline: true,
           color: resolveAnnotationColor(resolvedTheme),
         });
-        annotation.show();
+        annotationRef.current.show();
       }, 700);
-      //@ts-ignore
-    } else if (annotation?.color) {
-      annotation.color = resolveAnnotationColor(resolvedTheme);
+      // rerender color
+    } else if (annotationRef.current) {
+      annotationRef.current.color = resolveAnnotationColor(resolvedTheme);
     }
   }, [mounted, resolvedTheme]);
 
