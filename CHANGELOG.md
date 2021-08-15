@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/imshubhamsingh/shubham.sh/compare/v1.2.1...v1.3.0) (2021-08-15)
+
+
+### Features
+
+* updated the highlight color in dark mode ([a736862](https://github.com/imshubhamsingh/shubham.sh/commit/a73686202ad1545d084f511b03845fbd3881b840))
+
+
+### Bug Fixes
+
+* color contrast for theme toggler ([256e8f8](https://github.com/imshubhamsingh/shubham.sh/commit/256e8f848ed6ec1efb257738505b0d20257f1e20))
+* updated dark theme ([989d82d](https://github.com/imshubhamsingh/shubham.sh/commit/989d82d0289a1688e5b9dfbe43b783f3954a153c))
+
 ### [1.2.1](https://github.com/imshubhamsingh/shubham.sh/compare/v1.2.0...v1.2.1) (2021-08-14)
 
 
