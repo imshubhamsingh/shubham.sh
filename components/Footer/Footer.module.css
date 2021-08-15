@@ -20,4 +20,13 @@
     flex-direction: column-reverse;
     align-items: flex-start;
   }
+
+  .footer ul > li {
+    margin-right: 0px;
+  }
+
+  .footer ul > li > a {
+    padding: 8px;
+    font-size: 20px
+  }
 }
