@@ -69,3 +69,15 @@
 .icon-smallcase::before {
   content: '\e905';
 }
+
+.icon-reddit::before {
+  content: '\e907';
+}
+
+.icon-reddit:hover::before {
+  color: #FF4500;
+}
+
+.icon-close::before {
+  content: '\e906';
+}
