@@ -10,16 +10,6 @@
   box-shadow: 0 1px 4px 0 var(--bg-dots);
 }
 
-.toggle:focus:after {
-  content: '';
-  position: absolute;
-  height: calc(100% + 16px);
-  width: calc(100% + 16px);
-  border-radius: 100px;
-  border: 2px dashed var(--color-purple);
-  top: -8px;
-  left: -8px;
-}
 
 .toggle svg {
   fill: var(--theme-toggler);

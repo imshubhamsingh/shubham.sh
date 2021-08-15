@@ -37,7 +37,7 @@ h1 {
 }
 
 *:focus {
-  outline: 0.15rem dashed var(--color-purple);
+  outline: 0.15rem dashed var(--color-link-focus);
   outline-offset: 0.25rem;
 }
 

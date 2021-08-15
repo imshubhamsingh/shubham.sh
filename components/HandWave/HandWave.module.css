@@ -1,7 +1,7 @@
 .handWave {
   animation: wave 5s 2 forwards;
   transform-origin: 100% 100%;
-  fill: #c58c85;
+  fill: var(--color-hand);
 }
 
 .hand {
