@@ -23,8 +23,23 @@
   width: 65px;
 }
 
+.link {
+  display: inline-block;
+}
+
 @media (max-width: 768px) {
   .container {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .link {
+    padding: 8px 0;
+    font-size: 16px;
+  }
+
+  .info {
+    font-size: 20px;
+    margin-bottom: 4px;
+    margin-top: 20px;
   }
 }

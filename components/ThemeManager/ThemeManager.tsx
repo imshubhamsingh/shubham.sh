@@ -1,15 +1,14 @@
+import classNames from 'classnames';
 import * as React from 'react';
 import { useTheme } from 'next-themes';
 
+import useIsMounted from '~/hooks/useIsMounted';
 import styles from './ThemeManager.module.css';
-import classNames from 'classnames';
 
 function ThemeManager() {
-  const [mounted, setMounted] = React.useState(false);
-  const { resolvedTheme, setTheme } = useTheme();
+  const mounted = useIsMounted();
 
-  // After mounting, we have access to the theme
-  React.useEffect(() => setMounted(true), []);
+  const { resolvedTheme, setTheme } = useTheme();
 
   return (
     <button
@@ -19,6 +18,7 @@ function ThemeManager() {
         'pointer',
         'relative',
         'flex-center',
+        'custom-focus',
         styles.toggle,
       )}
       aria-label="Toggle theme"

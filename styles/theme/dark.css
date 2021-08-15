@@ -1,12 +1,16 @@
 [data-theme='dark'] {
-  --bg: #0c0c0c;
+  --bg: #191919;
   --color-link-hover: #248aff;
   --text-color-dark: #fff;
-  --text-color-light: #9ca3af;
-  --text-color-normal: #fff;
-  --bg-dots: #101010;
+  --text-color-light: #ffffff99;
+  --text-color-normal: #ffffffde;
+  --bg-dots: #1d1d1d;
   --theme-toggler: #eec413;
   --bg-btn: #3b3b3b;
   --btn-border: hsl(0deg 0% 23%);
-  --btn-bsdow: #000;
+  --btn-bsdow: #000000a6;
+  --color-link: #3F99FF;
+  --color-hand: #fff;
+  --color-email: #e2ff00;
+  --color-link-focus: #e2ff00;
 }

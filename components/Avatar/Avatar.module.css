@@ -1,7 +1,7 @@
 .container {
   height: 50px;
   width: 50px;
-  background: var(--color-purple);
+  background: var(--color-link-focus);
   border-radius: 50%;
   overflow: hidden;
   transform: translateZ(0);
@@ -12,6 +12,10 @@
   left: -10px;
   animation: me 5s 1 forwards;
   transition: tranform 700ms ease-in;
+}
+
+.bg {
+  fill: var(--color-link-focus);
 }
 
 @keyframes me {

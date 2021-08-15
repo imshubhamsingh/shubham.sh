@@ -1,6 +1,5 @@
-import Head from 'next/head';
 import AnalyticsServicesScripts from '~/components/AnalyticsScript/AnalyticsScript';
-import Home from '~/components/Home/Home';
+import Home from '~/scenes/Home/Home';
 import SEO from '~/components/SEO/SEO';
 
 export default function Index() {

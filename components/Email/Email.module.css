@@ -1,0 +1,13 @@
+.btnMail {
+  border: 1px solid var(--btn-border);
+  border-radius: 100px;
+  background-color: var(--bg-btn);
+  box-shadow: 0 1px 4px 0 var(--btn-bsdow);
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.email {
+    color: var(--color-email);
+}
+

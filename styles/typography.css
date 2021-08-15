@@ -55,7 +55,7 @@
 }
 
 .link {
-  color: var(--color-blue);
+  color: var(--color-link);
   cursor: pointer;
   text-decoration: none;
 }
