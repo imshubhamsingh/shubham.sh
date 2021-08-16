@@ -44,3 +44,7 @@
   top: -8px;
   left: -8px;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

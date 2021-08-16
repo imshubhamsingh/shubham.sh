@@ -6,7 +6,7 @@
   display: grid;
   grid-template-rows: 98px 1fr 48px;
   min-height: 100vh;
-  transition: filter 200ms ease-in;
+  transition: filter 500ms ease 0s;
 }
 
 .container:before {

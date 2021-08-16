@@ -8,13 +8,13 @@ function Project() {
   return (
     <>
       {projectList.map((el) => (
-        <Link key={el.name} href={`/projects/${el.id}`}>
+        <Link key={el.name} href={`/projects/${el.id}`} scroll={false}>
           <a className="flex flex-start-top">
             <div className={classNames(styles.image, 'mr16')}>
               <figure>
                 <Image
                   src={require(`~/public/projects/${el.image}.png`)}
-                  alt="Shubham Singh"
+                  alt={el.name}
                   layout="fill"
                   objectFit="cover"
                 />

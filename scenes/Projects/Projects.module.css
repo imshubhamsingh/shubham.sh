@@ -1,0 +1,17 @@
+.shortInfo {
+  padding: 24px 24px 0 24px;
+}
+
+.image {
+  height: 65px;
+  width: 65px;
+  flex-shrink: 0;
+}
+
+.image figure {
+  position: absolute;
+  border-radius: 8px;
+  height: 65px;
+  overflow: hidden;
+  width: 65px;
+}

@@ -10,7 +10,7 @@ function Blogs() {
         <p className={classNames('text-dark', styles.info)}>
           Dive in and learn something new!
         </p>
-        <p className="text-14 text-light">
+        <div className="text-light">
           {blogList.map((el) => (
             <p className="text-14" key={el.name}>
               <a
@@ -23,7 +23,7 @@ function Blogs() {
               </a>
             </p>
           ))}
-        </p>
+        </div>
       </div>
     </div>
   );

@@ -1,22 +1,67 @@
 .overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    inset: 0;
-    background: rgb(255 255 255 / 4%);
-    filter: blur(5px);
-}
-
-.content {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 100;
-  overflow: auto;
-  text-align: center;
-  padding: 4px;
+  inset: 0;
+  background: rgb(255 255 255 / 4%);
+  filter: blur(5px);
 }
+
+.content {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  height: 90%;
+  overflow: auto;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 950px;
+  overflow: hidden;
+  background: var(--bg);
+  border-color: var(--btn-border);
+  box-shadow: 0 1px 4px 0 var(--bg-dots);
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  animation: rise 700ms forwards cubic-bezier(0.32, 1, 0.23, 1);
+}
+
+@keyframes rise {
+  0% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.close {
+  position: absolute;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  right: 16px;
+  top: 16px;
+  padding: 20px;
+  background-color: var(--bg-btn);
+  padding: 4px 8px;
+  border: 1px solid var(--btn-border);
+  box-shadow: 0 1px 4px 0 var(--bg-dots);
+}
+
+.close i {
+  top: 0
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+  }
+}
+
