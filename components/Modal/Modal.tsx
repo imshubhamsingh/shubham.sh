@@ -56,7 +56,7 @@ function Modal({ children, bodyRef, onClose }: IModal) {
         >
           <i className="icon-close" />
         </button>
-        {children}
+        <div className={styles.contentInfo}>{children}</div>
       </div>
     </>
   );

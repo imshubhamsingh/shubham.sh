@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Image from 'next/image';
 import classNames from 'classnames';
+import Markdown from '~/components/Markdown/Markdown';
 import { useRouter } from 'next/dist/client/router';
 import Modal from '~/components/Modal/Modal';
 
@@ -47,10 +48,7 @@ function Projects({ meta, content }) {
             className={styles.hr}
           />
         </div>
-        <div
-          className={styles.main}
-          dangerouslySetInnerHTML={{ __html: content }}
-        ></div>
+        <Markdown className={styles.main} html={content} />
       </div>
     </Modal>
   );

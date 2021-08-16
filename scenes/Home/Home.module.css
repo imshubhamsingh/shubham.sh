@@ -12,7 +12,7 @@
 .container:before {
   content: '';
   position: fixed;
-  z-index: -1;
+  z-index: var(--zIndex-L0);
   height: 100%;
   width: 100%;
   background-image: radial-gradient(var(--bg-dots) 10%, transparent 10%);

@@ -7,6 +7,7 @@
   height: 65px;
   width: 65px;
   flex-shrink: 0;
+  position: relative;
 }
 
 .image figure {

@@ -14,14 +14,12 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 100;
+  z-index: var(--zIndex-L1);
   height: 90%;
-  overflow: auto;
   padding: 0px;
   margin-left: auto;
   margin-right: auto;
   width: 950px;
-  overflow: hidden;
   background: var(--bg);
   border-color: var(--btn-border);
   box-shadow: 0 1px 4px 0 var(--bg-dots);
@@ -30,6 +28,20 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   animation: rise 700ms forwards cubic-bezier(0.32, 1, 0.23, 1);
+
+}
+
+.contentInfo {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  mask-image: linear-gradient(
+        to bottom,
+        transparent,
+        black 24px,
+        black 95%,
+        transparent
+    );
 }
 
 @keyframes rise {
@@ -49,6 +61,7 @@
   right: 16px;
   top: 16px;
   padding: 20px;
+  z-index: var(--zIndex-L1);
   background-color: var(--bg-btn);
   padding: 4px 8px;
   border: 1px solid var(--btn-border);

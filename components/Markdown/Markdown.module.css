@@ -1,0 +1,12 @@
+.md ul > li {
+  margin-left: 32px;
+}
+
+.md p,
+.md ul {
+  margin-bottom: 16px;
+}
+
+.md li {
+  margin-bottom: 8px;
+}
