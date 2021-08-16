@@ -24,7 +24,6 @@ function Home() {
               <Avatar />
               <div className="ml12">
                 <Signature />
-                <br />
                 <p className="text-light text-16">UI Enthusiast</p>
               </div>
             </a>
