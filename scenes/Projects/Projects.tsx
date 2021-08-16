@@ -6,11 +6,8 @@ import Modal from '~/components/Modal/Modal';
 
 import styles from './Projects.module.css';
 
-interface IProject {
-  project: any;
-}
-
-function Projects({ project }: IProject) {
+//@ts-ignore
+function Projects({ meta, content }) {
   const router = useRouter();
   const bodyRef = React.useRef<HTMLDivElement>(null);
   if (process.browser) {
@@ -20,7 +17,8 @@ function Projects({ project }: IProject) {
   function onClose() {
     router.push('/', undefined, { scroll: false });
   }
-  if (!project) return null;
+  if (!meta) return null;
+
   return (
     <Modal bodyRef={bodyRef} onClose={onClose}>
       <div>
@@ -30,7 +28,7 @@ function Projects({ project }: IProject) {
           <div className={classNames(styles.image, 'mr16')}>
             <figure>
               <Image
-                src={require(`~/public/projects/${project.image}.png`)}
+                src={require(`~/public/projects/${meta.icon}.png`)}
                 alt="Shubham Singh"
                 layout="fill"
                 objectFit="cover"
@@ -38,8 +36,8 @@ function Projects({ project }: IProject) {
             </figure>
           </div>
           <div>
-            <p className="text-dark font-medium text-16">{project.name}</p>
-            <p className="text-14 text-light">{project.description}</p>
+            <p className="text-dark font-medium text-16">{meta.title}</p>
+            <p className="text-14 text-light">{meta.excerpt}</p>
           </div>
         </section>
         <div>
@@ -49,6 +47,10 @@ function Projects({ project }: IProject) {
             className={styles.hr}
           />
         </div>
+        <div
+          className={styles.main}
+          dangerouslySetInnerHTML={{ __html: content }}
+        ></div>
       </div>
     </Modal>
   );

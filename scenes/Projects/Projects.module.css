@@ -27,3 +27,16 @@
   height: 1px;
   border: 0;
 }
+
+.main {
+  padding: 0 24px 24px 24px;
+}
+
+.main ul > li {
+  margin-left: 32px;
+}
+
+.main p,
+.main ul {
+  margin-bottom: 16px;
+}

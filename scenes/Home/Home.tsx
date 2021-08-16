@@ -22,13 +22,11 @@ function Home() {
           <Link href="/" passHref>
             <a className={classNames('flex', 'flex-start', styles.home)}>
               <Avatar />
-              <p className="ml12 text-16">
-                <span className="text-dark">
-                  <Signature />
-                </span>
+              <div className="ml12">
+                <Signature />
                 <br />
-                <span className="text-light">UI Enthusiast</span>
-              </p>
+                <p className="text-light text-16">UI Enthusiast</p>
+              </div>
             </a>
           </Link>
           <div className="flex flex-start">
