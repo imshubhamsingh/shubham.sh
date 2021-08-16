@@ -1,5 +1,6 @@
 .shortInfo {
   padding: 24px 24px 0 24px;
+  max-width: 480px;
 }
 
 .image {
@@ -14,4 +15,15 @@
   height: 65px;
   overflow: hidden;
   width: 65px;
+}
+
+.hr {
+  opacity: 0.6;
+  margin: 24px;
+  width: calc(100% - 48px);
+  border-style: solid;
+  background-color: var(--text-color-light);
+  opacity: 0.2;
+  height: 1px;
+  border: 0;
 }

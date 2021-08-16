@@ -42,6 +42,13 @@ function Projects({ project }: IProject) {
             <p className="text-14 text-light">{project.description}</p>
           </div>
         </section>
+        <div>
+          <hr
+            role="separator"
+            aria-orientation="horizontal"
+            className={styles.hr}
+          />
+        </div>
       </div>
     </Modal>
   );
