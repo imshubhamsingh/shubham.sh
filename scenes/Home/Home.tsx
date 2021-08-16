@@ -12,14 +12,12 @@ import Footer from '~/components/Footer/Footer';
 import ThemeManager from '~/components/ThemeManager/ThemeManager';
 import Intro from '~/components/Intro/Intro';
 import Email from '~/components/Email/Email';
-import Details from '~/components/Projects/Details/Details';
+import Blogs from '~/components/Blogs/Blogs';
 
 function Home() {
-  const ref = React.useRef<HTMLDivElement>(null);
   return (
     <>
-      <Details parentRef={ref} />
-      <div className={styles.container} ref={ref}>
+      <div className={styles.container} id="main">
         <nav className={classNames('flex-apart', styles.nav)}>
           <Link href="/" passHref>
             <a className={classNames('flex', 'flex-start', styles.home)}>
@@ -46,7 +44,10 @@ function Home() {
           </section>
           <section className="mb24 text-normal">
             <Intro />
-            <Project />
+            <section className={styles.infoContainer}>
+              <Project />
+              <Blogs />
+            </section>
           </section>
           <div className={classNames(styles.mwebWork, 'mb16')}>
             <CurrentWorkPlace />
