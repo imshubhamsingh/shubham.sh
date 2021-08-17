@@ -60,10 +60,9 @@
   overflow-x: scroll;
 }
 
-
 .scroll::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
+  width: 0px;
+  height: 0px;
 }
 
 .tag {
@@ -72,6 +71,35 @@
   border: 1px solid var(--btn-border);
   border-radius: 4px;
   padding: 12px;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  white-space: nowrap;
+  position: relative;
+  padding: 0 24px 24px 24px;
+  /* cursor: grab;
+  user-select: none;
+  touch-action: pan-y;
+  transform-origin: 50% 50% 0px; */
+}
+
+.gallery > div {
+  position: relative;
+  flex: 1 0;
+  width: 100%;
+  background: red;
+}
+
+.gallery figure {
+    border: 1px solid var(--btn-border);
+   border-radius: 22px;
+  overflow: hidden;
+  width: 85%;
+  flex: 1 0;
+  margin-right: 24px;
 }
 
 @media (--screen-mweb) {

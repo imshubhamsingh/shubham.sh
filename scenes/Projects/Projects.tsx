@@ -20,7 +20,6 @@ function Projects({ meta, content }) {
   }
   if (!meta) return null;
 
-  console.log(meta);
   return (
     <Modal bodyRef={bodyRef} onClose={onClose}>
       <div>
@@ -60,6 +59,18 @@ function Projects({ meta, content }) {
             </span>
           ))}
         </div>
+        {/* <div className={classNames(styles.gallery)}>
+          {(meta.images || []).map((el: string) => (
+            <figure>
+              <Image
+                src={require(`~/public/projects/images/${el}.png`)}
+                alt={`${meta.title}_photo_${el}`}
+                // layout="fill"
+                // objectFit="cover"
+              />
+            </figure>
+          ))}
+        </div> */}
         <Markdown className={styles.main} html={content} />
         <div className={classNames(styles.main, 'mb12')}>
           <a
