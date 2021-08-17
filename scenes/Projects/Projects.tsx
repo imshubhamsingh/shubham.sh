@@ -20,6 +20,7 @@ function Projects({ meta, content }) {
   }
   if (!meta) return null;
 
+  console.log(meta);
   return (
     <Modal bodyRef={bodyRef} onClose={onClose}>
       <div>
@@ -48,7 +49,46 @@ function Projects({ meta, content }) {
             className={styles.hr}
           />
         </div>
+        <p className="text-light text-12 mb12 ml24">TECH</p>
+        <div className={classNames(styles.scroll, 'mb24')}>
+          {(meta.tags || []).map((el: string) => (
+            <span className={classNames(styles.tag, 'mr12')} key={el}>
+              {el}
+            </span>
+          ))}
+        </div>
         <Markdown className={styles.main} html={content} />
+        <div className={classNames(styles.main, 'mb12')}>
+          <a
+            href={`${meta.link}?ref=shubham.sh`}
+            className={classNames(
+              'btn',
+              'flex-center',
+              'pointer',
+              'custom-focus',
+              styles.btn,
+            )}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Visit
+          </a>
+        </div>
+        {/* <ul className={classNames(styles.externalLinks, 'flex')}>
+          {Object.entries(meta.others).map(([key, value]) => (
+            <li key={key}>
+              <a
+                className="text-light"
+                href={`${value}/?ref=shubham.sh`}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={key}
+              >
+                <i className={`icon-${key}`} />
+              </a>
+            </li>
+          ))}
+        </ul> */}
       </div>
     </Modal>
   );

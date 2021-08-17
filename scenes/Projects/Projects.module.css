@@ -20,8 +20,8 @@
 
 .hr {
   opacity: 0.6;
-  margin: 24px;
-  width: calc(100% - 48px);
+  margin: 15px;
+  width: calc(100% - 30px);
   border-style: solid;
   background-color: var(--text-color-light);
   opacity: 0.2;
@@ -33,11 +33,47 @@
   padding: 0 24px 24px 24px;
 }
 
-.main ul > li {
-  margin-left: 32px;
+.externalLinks {
+  padding: 24px 24px 24px;
 }
 
-.main p,
-.main ul {
-  margin-bottom: 16px;
+.btn {
+  outline: none;
+  background-color: var(--bg-btn);
+  padding: 0 30px;
+  height: 40px;
+  line-height: 16px;
+  max-width: 180px;
+  color: var(--color-email);
+  border: 1px solid var(--btn-border);
+  box-shadow: 0 1px 4px 0 var(--bg-dots);
+}
+
+.scroll {
+  display: block;
+  padding: 0 24px;
+  dispaly: flex;
+  align-items: center;
+  flex-direction: row;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--bg);
+  border: 1px solid var(--btn-border);
+  border-radius: 4px;
+  padding: 12px;
+}
+
+@media (--screen-mweb) {
+  .btn {
+    margin: 0 auto;
+  }
 }

@@ -5,6 +5,8 @@
 .md p,
 .md ul {
   margin-bottom: 16px;
+  font-size: 16px;
+  color: var(--text-color-dark);
 }
 
 .md li {
