@@ -52,7 +52,10 @@ function Projects({ meta, content }) {
         <p className="text-light text-12 mb12 ml24">TECH</p>
         <div className={classNames(styles.scroll, 'mb24')}>
           {(meta.tags || []).map((el: string) => (
-            <span className={classNames(styles.tag, 'mr12')} key={el}>
+            <span
+              className={classNames(styles.tag, 'mr12', 'text-normal')}
+              key={el}
+            >
               {el}
             </span>
           ))}

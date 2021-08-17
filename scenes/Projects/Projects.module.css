@@ -31,6 +31,7 @@
 
 .main {
   padding: 0 24px 24px 24px;
+  max-width: 70%;
 }
 
 .externalLinks {
@@ -59,6 +60,7 @@
   overflow-x: scroll;
 }
 
+
 .scroll::-webkit-scrollbar {
     width: 0px;
     height: 0px;
@@ -75,5 +77,9 @@
 @media (--screen-mweb) {
   .btn {
     margin: 0 auto;
+  }
+
+  .main {
+    max-width: 100%;
   }
 }
