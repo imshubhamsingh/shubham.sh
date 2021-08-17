@@ -30,8 +30,8 @@ function Projects({ meta, content }) {
           <div className={classNames(styles.image, 'mr16')}>
             <figure>
               <Image
-                src={require(`~/public/projects/${meta.icon}.png`)}
-                alt="Shubham Singh"
+                src={require(`~/public/projects/icons/${meta.icon}.png`)}
+                alt={meta.title}
                 layout="fill"
                 objectFit="cover"
               />
@@ -77,21 +77,6 @@ function Projects({ meta, content }) {
             Visit
           </a>
         </div>
-        {/* <ul className={classNames(styles.externalLinks, 'flex')}>
-          {Object.entries(meta.others).map(([key, value]) => (
-            <li key={key}>
-              <a
-                className="text-light"
-                href={`${value}/?ref=shubham.sh`}
-                target="_blank"
-                rel="noreferrer"
-                aria-label={key}
-              >
-                <i className={`icon-${key}`} />
-              </a>
-            </li>
-          ))}
-        </ul> */}
       </div>
     </Modal>
   );

@@ -10,6 +10,10 @@
   box-shadow: 0 1px 4px 0 var(--bg-dots);
 }
 
+.toggle:focus:after {
+    border-radius: 50%;
+}
+
 
 .toggle svg {
   fill: var(--theme-toggler);

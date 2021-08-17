@@ -9,12 +9,12 @@ function ProjectListing() {
   return (
     <>
       {(PROJECT_LIST || []).map((el) => (
-        <Link key={el.title} href={`/projects/${el.slug}`} scroll={false}>
+        <Link key={el.title} href={`/projects/icons/${el.slug}`} scroll={false}>
           <a className="flex flex-start-top">
             <div className={classNames(styles.image, 'mr16')}>
               <figure>
                 <Image
-                  src={require(`~/public/projects/${el.icon}.png`)}
+                  src={require(`~/public/projects/icons/${el.icon}.png`)}
                   alt={el.title}
                   layout="fill"
                   objectFit="cover"

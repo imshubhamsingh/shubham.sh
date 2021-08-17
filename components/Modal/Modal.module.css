@@ -28,7 +28,6 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   animation: rise 700ms forwards cubic-bezier(0.32, 1, 0.23, 1);
-
 }
 
 .contentInfo {
@@ -36,12 +35,12 @@
   width: 100%;
   overflow: auto;
   mask-image: linear-gradient(
-        to bottom,
-        transparent,
-        black 24px,
-        black 95%,
-        transparent
-    );
+    to bottom,
+    transparent,
+    black 24px,
+    black 95%,
+    transparent
+  );
 }
 
 @keyframes rise {
@@ -68,8 +67,12 @@
   box-shadow: 0 1px 4px 0 var(--bg-dots);
 }
 
+.close:focus:after {
+  border-radius: 50%;
+}
+
 .close i {
-  top: 0
+  top: 0;
 }
 
 @media (--screen-mweb) {
@@ -77,4 +80,3 @@
     width: 100%;
   }
 }
-
