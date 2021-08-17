@@ -43,7 +43,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (--screen-mweb) {
   .playing {
     margin-bottom: 16px;
   }

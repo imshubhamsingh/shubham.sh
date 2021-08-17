@@ -14,7 +14,7 @@
   display: inline-flex;
 }
 
-@media (max-width: 768px) {
+@media (--screen-mweb) {
   .footer {
     margin-top: 34px;
     flex-direction: column-reverse;

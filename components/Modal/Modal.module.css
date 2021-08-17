@@ -72,7 +72,7 @@
   top: 0
 }
 
-@media (max-width: 768px) {
+@media (--screen-mweb) {
   .content {
     width: 100%;
   }

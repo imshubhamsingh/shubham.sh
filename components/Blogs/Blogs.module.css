@@ -2,7 +2,7 @@
   display: inline-block;
 }
 
-@media (max-width: 768px) {
+@media (--screen-mweb) {
   .link {
     padding: 8px 0;
     font-size: 16px;

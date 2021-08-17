@@ -54,7 +54,7 @@
   padding: 0 16px;
 }
 
-@media (min-width: 1184px) {
+@media (--screen-desktop) {
   .main {
     width: 956px;
     display: flex;
@@ -70,7 +70,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (--screen-mweb) {
   .mwebWork {
     display: block;
   }
@@ -88,7 +88,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (--screen-tabletOrAbove) {
   .mwebWork {
     display: none;
   }
