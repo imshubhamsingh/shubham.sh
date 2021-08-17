@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import styles from './Home.module.css';
 import CurrentWorkPlace from '~/components/CurrentWorkPlace/CurrentWorkPlace';
-import Project from '~/components/Projects/Project';
+import ProjectListing from '~/components/ProjectsListing/ProjectListing';
 import HandWave from '~/components/HandWave/HandWave';
 import Avatar from '~/components/Avatar/Avatar';
 import Signature from '~/components/Signature/Signature';
@@ -42,7 +42,7 @@ function Home() {
           <section className="mb24 text-normal">
             <Intro />
             <section className={styles.infoContainer}>
-              <Project />
+              <ProjectListing />
               <Blogs />
             </section>
           </section>

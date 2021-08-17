@@ -1,10 +1,11 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import Image from 'next/image';
-import styles from './Project.module.css';
 import Link from 'next/link';
 
-function Project() {
+import styles from './ProjectListing.module.css';
+
+function ProjectListing() {
   return (
     <>
       {(PROJECT_LIST || []).map((el) => (
@@ -22,7 +23,7 @@ function Project() {
             </div>
             <div>
               <p className="text-dark">{el.title}</p>
-              <p className="text-14 text-light">{el.excerpt}</p>
+              <p className="text-14 text-light line-clamp">{el.excerpt}</p>
             </div>
           </a>
         </Link>
@@ -31,4 +32,4 @@ function Project() {
   );
 }
 
-export default Project;
+export default ProjectListing;

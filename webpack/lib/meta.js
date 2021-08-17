@@ -27,7 +27,8 @@ function extractProjectMetaData() {
     .map((el) => ({
       slug: el,
       ...getParsedFile(el, path).meta,
-    }));
+    }))
+    .sort((a, b) => a.index - b.index);
   return projectMetaData;
 }
 
