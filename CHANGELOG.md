@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/imshubhamsingh/shubham.sh/compare/v1.3.0...v1.4.0) (2021-08-18)
+
+
+### Features
+
+* added hooks for modals to support accessibillity like contained focus and mouse drag ([f87cf47](https://github.com/imshubhamsingh/shubham.sh/commit/f87cf47e5fb0ed468b0da604e65119db3078e26a))
+* added postcss-custom-media plugin ([75bc545](https://github.com/imshubhamsingh/shubham.sh/commit/75bc545a4cae0780911ce898674fa95936bfe227))
+* added reddit in social media links ([124e62f](https://github.com/imshubhamsingh/shubham.sh/commit/124e62f0f40dfcc1c647aa52054995cb503bd450))
+* automated project list with webpack define plugin ([b269094](https://github.com/imshubhamsingh/shubham.sh/commit/b269094a9e787616a752fbda569d03c24a916769))
+* basic markdown support ([7a03e9c](https://github.com/imshubhamsingh/shubham.sh/commit/7a03e9cedbdd96867b19734d65201fb40c89063c))
+
+
+### Bug Fixes
+
+* avatar border issue in dark mode ([4b42e68](https://github.com/imshubhamsingh/shubham.sh/commit/4b42e68304a797c1096069f23773fa5e61ec980d))
+
 ## [1.3.0](https://github.com/imshubhamsingh/shubham.sh/compare/v1.2.1...v1.3.0) (2021-08-15)
 
 
