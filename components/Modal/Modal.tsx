@@ -1,6 +1,8 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import styles from './Modal.module.css';
+import useContainedFocus from '~/hooks/useContainedFocus';
+import useOutsideClick from '~/hooks/useClickOutside';
 
 interface IModal {
   children: React.ReactNode;
@@ -9,6 +11,8 @@ interface IModal {
 }
 
 function Modal({ children, bodyRef, onClose }: IModal) {
+  const modalRef = React.useRef<HTMLDivElement>(null);
+
   React.useEffect(() => {
     const ref = bodyRef?.current;
     document.body.classList.add('no-scroll');
@@ -18,6 +22,12 @@ function Modal({ children, bodyRef, onClose }: IModal) {
       ref?.style.setProperty('filter', '');
     };
   }, [bodyRef]);
+
+  useContainedFocus(modalRef);
+
+  useOutsideClick(modalRef, () => {
+    onClose?.();
+  });
 
   const listenKeyboard = React.useCallback(
     (e: KeyboardEvent) => {
@@ -43,7 +53,7 @@ function Modal({ children, bodyRef, onClose }: IModal) {
   return (
     <>
       <div className={styles.overlay}></div>
-      <div className={styles.content}>
+      <div className={styles.content} ref={modalRef}>
         <button
           className={classNames(
             styles.close,
