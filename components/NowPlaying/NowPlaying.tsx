@@ -4,7 +4,9 @@ import socialMediaLinks from '~/data/socialMedia';
 
 import styles from './NowPlaying.module.css';
 
-const { icon, link } = socialMediaLinks[4];
+const { icon, link } = socialMediaLinks.filter(
+  (el) => el.name === 'spotify',
+)[0];
 
 export default function NowPlaying() {
   const { data } = useSWR('/api/now-playing', {
