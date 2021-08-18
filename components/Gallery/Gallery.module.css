@@ -8,6 +8,7 @@
   cursor: grab;
   scroll-snap-type: x mandatory;
   scroll-padding: 24px;
+  animation: fadeInRight 700ms 1 forwards;
 }
 
 .gallery::-webkit-scrollbar {
@@ -26,4 +27,16 @@
   align-items: center;
   justify-content: center;
   scroll-snap-align: start;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate(100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }

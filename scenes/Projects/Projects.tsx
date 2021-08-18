@@ -15,12 +15,12 @@ function Projects({ meta, content }) {
   const bodyRef = React.useRef<HTMLDivElement>(null);
   const images = React.useMemo(
     () =>
-      (meta.images || []).map((el: string) => ({
+      (meta?.images || []).map((el: string) => ({
         src: require(`~/public/projects/images/${el}.png`),
         alt: `${meta.title}_photo_${el}`,
         id: el,
       })),
-    [meta.images, meta.title],
+    [meta?.images, meta?.title],
   );
 
   if (process.browser) {

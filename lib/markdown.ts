@@ -13,7 +13,9 @@ export const getParsedFileContentBySlug = (slug: string, postsPath: string) => {
     const info = matter(fileContents);
     data = info.data;
     content = info.content;
-  } catch (err) {}
+  } catch (err) {
+    console.log(err);
+  }
   return {
     meta: data,
     content,
