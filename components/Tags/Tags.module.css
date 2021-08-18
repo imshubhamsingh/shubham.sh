@@ -1,0 +1,21 @@
+.scroll {
+  display: block;
+  dispaly: flex;
+  align-items: center;
+  flex-direction: row;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--bg);
+  border: 1px solid var(--btn-border);
+  border-radius: 4px;
+  padding: 12px;
+}

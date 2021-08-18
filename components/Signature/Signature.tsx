@@ -1,8 +1,12 @@
+import classNames from 'classnames';
 import styles from './Signature.module.css';
 
 function Signature() {
   return (
-    <figure className={styles.container} title="Shubham Singh">
+    <figure
+      className={classNames(styles.container, 'mb24')}
+      title="Shubham Singh"
+    >
       <svg height="60" viewBox="0 0 841 273" fill="none">
         <path
           d="M71.1964 44.4039C59.9142 45.9624 48.5852 47.1872 37.8083 51.1044C30.9746 53.5885 20.5177 58.0584 16.4927 64.6788C12.4306 71.3604 22.8834 75.9187 27.1996 78.0137C35.9211 82.247 45.4912 85.0963 53.0796 91.3699C63.2337 99.7647 57.5973 110.998 46.0416 114.22C36.2446 116.952 24.614 116.41 15.912 110.738C9.54228 106.587 8.08831 101.752 5.59976 95.4145"

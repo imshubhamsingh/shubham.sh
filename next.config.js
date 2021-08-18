@@ -1,5 +1,7 @@
 const cspBuilder = require('content-security-policy-builder');
 const cspHeaders = require('./config/cspHeaders');
+const { getPlugins } = require('./webpack/plugins');
+
 
 const cspConfig = cspBuilder(cspHeaders);
 
@@ -22,6 +24,9 @@ module.exports = {
     ];
   },
   webpack: (config, { dev, isServer }) => {
+    config.experiments = {
+      topLevelAwait: true,
+    };
     if (!dev && !isServer) {
       Object.assign(config.resolve.alias, {
         react: 'preact/compat',
@@ -29,6 +34,9 @@ module.exports = {
         'react-dom': 'preact/compat',
       });
     }
+
+    config.plugins.push(...getPlugins());
+
     return config;
   },
 };

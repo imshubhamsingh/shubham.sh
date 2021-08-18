@@ -1,0 +1,61 @@
+.shortInfo {
+  padding: 24px 24px 0 24px;
+  max-width: 480px;
+}
+
+.image {
+  height: 65px;
+  width: 65px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.image figure {
+  position: absolute;
+  border-radius: 8px;
+  height: 65px;
+  overflow: hidden;
+  width: 65px;
+}
+
+.hr {
+  opacity: 0.6;
+  margin: 15px;
+  width: calc(100% - 30px);
+  border-style: solid;
+  background-color: var(--text-color-light);
+  opacity: 0.2;
+  height: 1px;
+  border: 0;
+}
+
+.main {
+  padding: 0 24px 24px 24px;
+  max-width: 80%;
+}
+
+.externalLinks {
+  padding: 24px 24px 24px;
+}
+
+.btn {
+  outline: none;
+  background-color: var(--bg-btn);
+  padding: 0 30px;
+  height: 40px;
+  line-height: 16px;
+  max-width: 180px;
+  color: var(--color-email);
+  border: 1px solid var(--btn-border);
+  box-shadow: 0 1px 4px 0 var(--bg-dots);
+}
+
+@media (--screen-mweb) {
+  .btn {
+    margin: 0 auto;
+  }
+
+  .main {
+    max-width: 100%;
+  }
+}

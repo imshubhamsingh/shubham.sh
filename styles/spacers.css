@@ -30,3 +30,12 @@
 .mb16 {
   margin-bottom: 16px;
 }
+
+.pl24 {
+  padding-left: 24px;
+}
+
+
+.pr24 {
+  padding-right: 24px;
+}

@@ -18,5 +18,8 @@
         "extensions": [".ts", ".js", ".jsx", ".tsx", ".json"]
       }
     }
+  },
+  "globals": {
+    "PROJECT_LIST": true
   }
 }

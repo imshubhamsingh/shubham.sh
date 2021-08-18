@@ -1,6 +1,6 @@
 .container {
-  height: 50px;
-  width: 50px;
+  height: 54px;
+  width: 54px;
   background: var(--color-link-focus);
   border-radius: 50%;
   overflow: hidden;

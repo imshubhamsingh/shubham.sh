@@ -1,13 +1,4 @@
-import AnalyticsServicesScripts from '~/components/AnalyticsScript/AnalyticsScript';
-import Home from '~/scenes/Home/Home';
-import SEO from '~/components/SEO/SEO';
-
+// Main content is shown from Layout/App
 export default function Index() {
-  return (
-    <div>
-      <SEO />
-      <AnalyticsServicesScripts />
-      <Home />
-    </div>
-  );
+  return null;
 }

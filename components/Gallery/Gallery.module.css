@@ -1,0 +1,54 @@
+.gallery {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  white-space: nowrap;
+  position: relative;
+  overflow-x: scroll;
+  cursor: pointer;
+  scroll-padding: 24px;
+  animation: fadeInRight 700ms 1 forwards;
+}
+
+:global(.active).gallery {
+  cursor: grabbing;
+}
+
+.gallery::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.gallery figure {
+  overflow: hidden;
+  flex: 1 0 80%;
+  height: auto;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.gallery figure > div {
+  border: 1px solid var(--btn-border);
+  border-radius: 12px;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate(100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@media (--screen-tabletOrLower) {
+  .gallery {
+    scroll-snap-type: x mandatory;
+  }
+}

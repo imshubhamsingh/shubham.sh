@@ -7,6 +7,10 @@
   padding-right: 24px;
 }
 
+.btnMail:focus:after {
+    border-radius: 100px;
+}
+
 .email {
     color: var(--color-email);
 }

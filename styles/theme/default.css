@@ -8,13 +8,6 @@
   --color-green: #19af55;
   --color-purple: #805de1;
   --color-border: #dde0e4;
-}
-
-@media (prefers-color-scheme: no-preference) {
-}
-/* Apply a light color scheme */
-@media (prefers-color-scheme: light) {
-}
-/* Apply a dark color scheme */
-@media (prefers-color-scheme: dark) {
+  --zIndex-L1: 100;
+  --zIndex-L0: -1;
 }

@@ -1,0 +1,14 @@
+.md ul > li {
+  margin-left: 32px;
+}
+
+.md p,
+.md ul {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: var(--text-color-dark);
+}
+
+.md li {
+  margin-bottom: 8px;
+}

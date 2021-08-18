@@ -10,6 +10,11 @@ const links = [
     name: 'twitter',
   },
   {
+    link: 'https://www.reddit.com/user/imshubhamsingh',
+    icon: 'icon-reddit',
+    name: 'reddit',
+  },
+  {
     link: 'https://www.linkedin.com/in/imshubhamsingh97',
     icon: 'icon-linkedin',
     name: 'linkedin',

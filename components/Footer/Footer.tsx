@@ -10,7 +10,7 @@ function Footer() {
       <div className="flex flex-start">
         <p className="text-light mr12">/elsewhere</p>
         <ul className="flex">
-          {socialMediaLinks.slice(0, 4).map((el) => (
+          {socialMediaLinks.slice(0, socialMediaLinks.length - 1).map((el) => (
             <li key={el.name}>
               <a
                 className="text-light"
