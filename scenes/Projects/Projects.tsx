@@ -6,11 +6,23 @@ import { useRouter } from 'next/dist/client/router';
 import Modal from '~/components/Modal/Modal';
 
 import styles from './Projects.module.css';
+import Gallery from '~/components/Gallery/Gallery';
+import Tags from '~/components/Tags/Tags';
 
 //@ts-ignore
 function Projects({ meta, content }) {
   const router = useRouter();
   const bodyRef = React.useRef<HTMLDivElement>(null);
+  const images = React.useMemo(
+    () =>
+      (meta.images || []).map((el: string) => ({
+        src: require(`~/public/projects/images/${el}.png`),
+        alt: `${meta.title}_photo_${el}`,
+        id: el,
+      })),
+    [meta.images, meta.title],
+  );
+
   if (process.browser) {
     //@ts-ignore
     bodyRef.current = document.getElementById?.('main');
@@ -49,28 +61,8 @@ function Projects({ meta, content }) {
           />
         </div>
         <p className="text-light text-12 mb12 ml24">TECH</p>
-        <div className={classNames(styles.scroll, 'mb24')}>
-          {(meta.tags || []).map((el: string) => (
-            <span
-              className={classNames(styles.tag, 'mr12', 'text-normal')}
-              key={el}
-            >
-              {el}
-            </span>
-          ))}
-        </div>
-        {/* <div className={classNames(styles.gallery)}>
-          {(meta.images || []).map((el: string) => (
-            <figure>
-              <Image
-                src={require(`~/public/projects/images/${el}.png`)}
-                alt={`${meta.title}_photo_${el}`}
-                // layout="fill"
-                // objectFit="cover"
-              />
-            </figure>
-          ))}
-        </div> */}
+        <Tags tags={meta.tags} className={classNames('mb24', 'pl24', 'pr24')} />
+        <Gallery images={images} className={classNames('mb24', 'pl24')} />
         <Markdown className={styles.main} html={content} />
         <div className={classNames(styles.main, 'mb12')}>
           <a

@@ -1,0 +1,29 @@
+.gallery {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  white-space: nowrap;
+  position: relative;
+  overflow-x: scroll;
+  cursor: grab;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 24px;
+}
+
+.gallery::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.gallery figure {
+  border: 1px solid var(--btn-border);
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 1 0 80%;
+  height: auto;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
