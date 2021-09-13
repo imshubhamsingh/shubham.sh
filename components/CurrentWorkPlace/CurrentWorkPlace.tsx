@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 
 import styles from './CurrentWorkPlace.module.css';
+import Vimeo from './Vimeo';
 
 interface ICurrentWorkPlace {
   className?: string;
@@ -16,15 +17,7 @@ function CurrentWorkPlace({ className }: ICurrentWorkPlace) {
         className,
       )}
     >
-      <i className={styles.blink} /> Currently working at{' '}
-      <a
-        className="text-dark font-medium link"
-        target="_blank"
-        href="http://smallcase.com/about/?ref=shubham.sh"
-        rel="noreferrer"
-      >
-        <i className="icon-smallcase" /> smallcase
-      </a>
+      <i className={styles.blink} /> Currently working at <Vimeo />
     </p>
   );
 }
