@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/imshubhamsingh/shubham.sh/compare/v1.4.0...v1.5.0) (2021-09-13)
+
+
+### Features
+
+* update the current job ([91c1701](https://github.com/imshubhamsingh/shubham.sh/commit/91c17011671b041c4d27c8bcb884a825dd6386ce))
+
+
+### Bug Fixes
+
+* updated remark-html for vulnerability fix ([6dabea6](https://github.com/imshubhamsingh/shubham.sh/commit/6dabea6812a433561865a8e42e2a43622bbd9d2c))
+
 ## [1.4.0](https://github.com/imshubhamsingh/shubham.sh/compare/v1.3.0...v1.4.0) (2021-08-18)
 
 
