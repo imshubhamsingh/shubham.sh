@@ -1,7 +1,7 @@
 import classNames from 'classnames';
+import Headout from './Headout/Headout';
 
 import styles from './CurrentWorkPlace.module.css';
-import Vimeo from './Vimeo';
 
 interface ICurrentWorkPlace {
   className?: string;
@@ -17,7 +17,7 @@ function CurrentWorkPlace({ className }: ICurrentWorkPlace) {
         className,
       )}
     >
-      <i className={styles.blink} /> Currently working at <Vimeo />
+      <i className={styles.blink} /> Currently working at <Headout />
     </p>
   );
 }
